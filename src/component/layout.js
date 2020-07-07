@@ -10,15 +10,12 @@ import SlidBar from "./slidbar"
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
     <Link to={props.to}><span  css={css`
-          position: relative;
-          max-width: 100%;
-          padding-top: ${rhythm(4)};
-          color:white;
+           padding : 0px;
+            color: #ffffff;
+            display: inline-block;
             &:hover {
-            color: gray;
+            color : #b2d8f8;
             }
-            
-            
       `}>{props.children}</span></Link>
   </li>
 )
@@ -43,7 +40,7 @@ export default function Layout({ children }) {
         margin: 0;
         max-width: 100%;
         padding: ${rhythm(0.3)};
-        padding-top: ${rhythm(0.7)};
+        padding-top: ${rhythm(0.2)};
          background: url(${logoPath}) center/cover no-repeat;
       `}
     >
@@ -60,7 +57,7 @@ export default function Layout({ children }) {
             
             color:white;
             &:hover {
-            color: gray;
+            color: #b2d8f8;
             }
           `}
         >
@@ -74,9 +71,9 @@ export default function Layout({ children }) {
            margin: 30px;
           `}
          >
-        <ListLink to="/">Setting</ListLink>
-        <ListLink to="/my-files/">About</ListLink>
-        <ListLink to="/upload/">Myself</ListLink>
+        <ListLink to="/setting">Setting</ListLink>
+        <ListLink to="/about/">About</ListLink>
+        <ListLink to="/Myself/">Myself</ListLink>
       </ul>
     </div>
     <div  css={css`  display: flex;
