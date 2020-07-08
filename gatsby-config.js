@@ -15,7 +15,7 @@ module.exports = {
   },
 
   plugins: [
-    //获得数据（文件内容）的插件
+    //插件
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -25,6 +25,7 @@ module.exports = {
     },
     `gatsby-transformer-remark`, // markdown 转化器
     `gatsby-plugin-emotion`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
@@ -58,7 +59,7 @@ module.exports = {
         // Optional toaster duration. Defaults to 3500.
         toasterDuration: 5000
       }
-    },
+    }
 
   ],
 }

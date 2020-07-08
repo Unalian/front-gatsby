@@ -1,11 +1,15 @@
+//oldslidbar
+
 import React from "react"
 import { css } from "@emotion/core"
 import { useStaticQuery, Link, graphql } from "gatsby"
 import { rhythm } from "../utils/typography"
+import Button from '@material-ui/core/Button';
 import logefile from "../asset/fileIM.jpg"
 import logeshare from "../asset/shareIM.jpg"
 import logorecent from "../asset/recentIM.jpg"
 import logotrash from "../asset/trashIM.jpg"
+
 
 const ListSlide = props => (
     <Link to={props.to}>
@@ -51,40 +55,9 @@ length : 120,
 
 const ListSlideUpload = props => (
   <Link to={props.to}>
-    <li style={{ display: `inline-block`, marginRight: `0.5rem` }} css={css`
-          
-          width: 30px;
-          height: 30px;
-          -moz-border-radius: 50px;
-          -webkit-border-radius: 50px;
-          
-          
-
-          border-radius: 50px;
-          color: #eeeeee;
-      -moz-box-shadow: 1px 1px 1px 1px gray;
--webkit-box-shadow: 1px 1px 1px 1px gray;
-box-shadow: 1px 1px 1px 1px gray;
-
-            &:hover {
+    <Button  variant="contained" color="secondary" size="large" style={{ display: `inline-block`, marginRight: `0.5rem` }} css={css`
          
-             background:#b2d8f8;
-            }
-      `}><span css={css`
-
-            height:20px;
-            width:20px;
-            padding:0px;
-            margin-top: -10px;
-            margin-left:7px;
-            color: rgba(181,146,96,0.93);
-            
-            display: inline-block;
-            &:hover {
-            color : #000000;
-            }
-            font-size:200%;
-      `}>{props.children}</span> </li></Link>
+      `}>New</Button></Link>
 )
 
 export default function SlidBar() {

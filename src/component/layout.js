@@ -1,10 +1,13 @@
+// old version layout by html
+
 import React from "react"
 import { css } from "@emotion/core"
 import { useStaticQuery, Link, graphql } from "gatsby"
-
+import SearchAppBar from './search';
 import { rhythm } from "../utils/typography"
 import logoPath from "../asset/cetacis.jpg"
 import SlidBar from "./slidbar"
+
 
 
 const ListLink = props => (
@@ -69,8 +72,9 @@ export default function Layout({ children }) {
       <ul style={{ listStyle: `none`, float: `right` }}
           css={css`
            margin: 30px;
-          `}
-         >
+          `}>
+
+        <SearchAppBar></SearchAppBar>
         <ListLink to="/setting">Setting</ListLink>
         <ListLink to="/about/">About</ListLink>
         <ListLink to="/Myself/">Myself</ListLink>

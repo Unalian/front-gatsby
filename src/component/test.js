@@ -10,9 +10,9 @@ import PrimarySearchAppBar from '../component/newlayout'
 export default function Home({ data }) {
   return (
 
-  <PrimarySearchAppBar>
+    <PrimarySearchAppBar>
 
-  </PrimarySearchAppBar>
+    </PrimarySearchAppBar>
   )
 }
 
