@@ -24,7 +24,7 @@
     "gatsby-plugin-typography": "^2.5.9",
     "gatsby-remark-code-buttons": "^2.0.4",
     "gatsby-source-filesystem": "^2.3.18",
-    "gatsby-transformer-remark": "^2.8.23",
+    "gatsby-transformer-remark": "^5.25.1",
     "history": "latest",
     "material-ui-dropzone": "^3.3.0",
     "next": "^9.4.4",
